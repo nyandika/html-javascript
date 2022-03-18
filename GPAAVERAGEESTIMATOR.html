@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Point Average Estimator</title>
+</head>
+<body>
+    <h3>Grade Point Average Estimator</h3>
+    <table id="myTable">
+        <form action=""> 
+            <tr>
+                <th>No.</th>
+                <th>Course Name</th>
+                <th>Course Credits</th>
+                <th>Course Grade(Mark %)</th>
+                <th>Course Grade Points</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>
+                    <select id="courseName" onchange="setCreditUnits(this)">
+                        <option selected>Select</option>
+                        <option value="4" >CSC299H1-Research Opportunity Program</option>
+                        <option value="6" >CS300H1-Computers and Society</option>
+                        <option value="5" >CS309H1-Programming on the Web</option>
+                        <option value="4" >CS305H1-System Analysis and Requirements Management</option>
+                        <option value="5" >CS308H1-Object Oriented Software Development</option>
+                        <option value="4" >CS384H1-Introduction to Artificial Intelligence</option>
+                    </select>
+                </td>
+                <td>
+                    <div class="displays" id="1"></div>
+                </td>
+                <td>
+                    <input type="text" id="one">
+                </td>
+                <td>
+                    <div class="displays" id="out"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>
+                    <select class="form-control select" id="id1" name="id1" onchange="setCreditUnits(this)" required>
+                        <option selected>Select</option>
+                        <option value="4">CSC299H1-Research Opportunity Program</option>
+                        <option value="6">CS300H1-Computers and Society</option>
+                        <option value="5">CS309H1-Programming on the Web</option>
+                        <option value="4">CS305H1-System Analysis and Requirements Management</option>
+                        <option value="5">CS308H1-Object Oriented Software Development</option>
+                        <option value="4">CS384H1-Introduction to Artificial Intelligence</option>
+                    </select>
+                </td>
+                <td>
+                    <div class="displays" id="2"></div>
+                </td>
+                <td>
+                    <input type="text" id="one">
+                </td>
+                <td>
+                    <div class="displays" id="out"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>
+                    <select id="courseName" onchange="setCreditUnits(this)">
+                        <option selected>Select</option>
+                        <option value="4" id="researchOpportunity">CSC299H1-Research Opportunity Program</option>
+                        <option value="6" id="computersSociety">CS300H1-Computers and Society</option>
+                        <option value="5" id="programmingWeb">CS309H1-Programming on the Web</option>
+                        <option value="4" id="systemAnalysis">CS305H1-System Analysis and Requirements Management</option>
+                        <option value="5" id="oop">CS308H1-Object Oriented Software Development</option>
+                        <option value="4" id="ai">CS384H1-Introduction to Artificial Intelligence</option>
+                    </select>
+                </td>
+                <td>
+                    <div class="displays" id="3"></div>
+                </td>
+                <td>
+                    <input type="text" id="one">
+                </td>
+                <td>
+                    <div class="displays" id="out"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>
+                    <select id="courseName" onchange="setCreditUnits(this)">
+                        <option selected>Select</option>
+                        <option value="4" id="researchOpportunity">CSC299H1-Research Opportunity Program</option>
+                        <option value="6" id="computersSociety">CS300H1-Computers and Society</option>
+                        <option value="5" id="programmingWeb">CS309H1-Programming on the Web</option>
+                        <option value="4" id="systemAnalysis">CS305H1-System Analysis and Requirements Management</option>
+                        <option value="5" id="oop">CS308H1-Object Oriented Software Development</option>
+                        <option value="4" id="ai">CS384H1-Introduction to Artificial Intelligence</option>
+                    </select>
+                </td>
+                <td>
+                    <div class="displays" id="4"></div>
+                </td>
+                <td>
+                    <input type="text" id="one">
+                </td>
+                <td>
+                    <div class="displays" id="out"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>
+                    <select id="courseName" onchange="setCreditUnits(this)">
+                        <option selected>Select</option>
+                        <option value="4" id="researchOpportunity">CSC299H1-Research Opportunity Program</option>
+                        <option value="6" id="computersSociety">CS300H1-Computers and Society</option>
+                        <option value="5" id="programmingWeb">CS309H1-Programming on the Web</option>
+                        <option value="4" id="systemAnalysis">CS305H1-System Analysis and Requirements Management</option>
+                        <option value="5" id="oop">CS308H1-Object Oriented Software Development</option>
+                        <option value="4" id="ai">CS384H1-Introduction to Artificial Intelligence</option>
+                    </select>
+                </td>
+                <td>
+                    <div class="displays" id="5"></div>
+                </td>
+                <td>
+                    <input type="text" id="one">
+                </td>
+                <td>
+                    <div class="displays" id="out"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>
+                    <select id="courseName" onchange="setCreditUnits(this)">
+                        <option selected>Select</option>
+                        <option value="4" id="researchOpportunity">CSC299H1-Research Opportunity Program</option>
+                        <option value="6" id="computersSociety">CS300H1-Computers and Society</option>
+                        <option value="5" id="programmingWeb">CS309H1-Programming on the Web</option>
+                        <option value="4" id="systemAnalysis">CS305H1-System Analysis and Requirements Management</option>
+                        <option value="5" id="oop">CS308H1-Object Oriented Software Development</option>
+                        <option value="4" id="ai">CS384H1-Introduction to Artificial Intelligence</option>
+                    </select>
+                </td>
+                <td>
+                    <div class="displays" id="6"></div>
+                </td>
+                <td>
+                    <input type="text" id="one">
+                </td>
+                <td>
+                    <div class="displays" id="out"></div>
+                </td>
+            </tr>
+        </form>
+    </table>
+    <div class="result-total">
+        <p>Toatal GP:</p>
+        <div class="displays" id="total"></div>
+    </div>
+    <div class="result-average">
+        <p>(average) GPA:</p>
+        <div class="displays" id="average">
+        </div>
+    </div>
+    <button onclick="calculate()">Calculate GPA</button>
+    <script src="./script.js"></script>
+</body>
+</html>

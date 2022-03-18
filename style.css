@@ -1,0 +1,12 @@
+.displays{
+    background: rgb(255, 244, 196);
+    border: 1px solid;
+    height: 18px;
+    width: 130px;
+}
+.result-total{
+    display: inline-block;
+}
+button{
+    margin: 30px;
+    }
